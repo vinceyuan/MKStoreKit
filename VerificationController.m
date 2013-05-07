@@ -1,4 +1,5 @@
 #import "VerificationController.h"
+#import "OpenUDID.h"
 
 static VerificationController *singleton;
 
@@ -334,7 +335,7 @@ static VerificationController *singleton;
 #endif
     } else {
         // Pre iOS 6 
-        NSString *localIdentifier           = [UIDevice currentDevice].uniqueIdentifier;
+        NSString *localIdentifier           = [OpenUDID value];
         NSString *purchaseInfoUniqueId      = [purchaseInfoFromTransaction objectForKey:@"unique-identifier"];
 
         
