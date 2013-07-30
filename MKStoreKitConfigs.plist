@@ -3,12 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>Consumables</key>
-	<dict/>
+	<dict>
+		<key>com.steinlogic.iap6test.consumable</key>
+		<dict>
+			<key>Count</key>
+			<integer>500</integer>
+			<key>Name</key>
+			<string>EggBasket</string>
+		</dict>
+	</dict>
 	<key>Non-Consumables</key>
 	<array>
-		<string>com.vincesoft.sexiqtest.upgradesexiq</string>
+		<string>com.steinlogic.iap6test.nonconsumable</string>
 	</array>
 	<key>Subscriptions</key>
-	<dict/>
+	<dict>
+		<key>com.steinlogic.iap6test.autorenew</key>
+		<integer>7</integer>
+	</dict>
 </dict>
 </plist>
