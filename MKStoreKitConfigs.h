@@ -42,11 +42,14 @@
 // #define FishBasket @"FishBasket"
 
 #ifndef SERVER_PRODUCT_MODEL
-    #define SERVER_PRODUCT_MODEL 0
+    #define SERVER_PRODUCT_MODEL 1
+    //#define SERVER_PRODUCT_MODEL 0
 #endif
 
 #ifndef OWN_SERVER
-    #define OWN_SERVER nil
+    //#define OWN_SERVER @"https://pop-hub.com/api/v1"
+    #define OWN_SERVER @"http://192.168.1.106:3000/api/v1"
+    //#define OWN_SERVER nil
 #endif
 
 #ifndef REVIEW_ALLOWED
