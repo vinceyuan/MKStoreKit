@@ -174,7 +174,7 @@ static NSMutableData *sDataFromConnection;
   self.onReceiptVerificationSucceeded = completionBlock;
   self.onReceiptVerificationFailed = errorBlock;
   
-  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", OWN_SERVER, @"verifyProduct.php"]];
+  NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", OWN_SERVER, @"verifyProduct2.php"]];
 	
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url 
                                                             cachePolicy:NSURLRequestReloadIgnoringCacheData 
@@ -219,7 +219,7 @@ didReceiveResponse:(NSURLResponse *)response
   responseString = [responseString stringByTrimmingCharactersInSet:
                     [NSCharacterSet whitespaceAndNewlineCharacterSet]];
   self.dataFromConnection = nil;
-	if([responseString isEqualToString:@"YES"])		
+	if([responseString isEqualToString:@"OK2"])
 	{
     if(self.onReceiptVerificationSucceeded)
     {
@@ -274,7 +274,7 @@ didReceiveResponse:(NSURLResponse *)response
                     [NSCharacterSet whitespaceAndNewlineCharacterSet]];
   sDataFromConnection = nil;
   
-	if([responseString isEqualToString:@"YES"])		
+	if([responseString isEqualToString:@"OK2"])		
 	{
     if(onReviewRequestVerificationSucceeded)
     {
